@@ -1,0 +1,21 @@
+2021-10-18 08:05:52.139 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-10-18 08:05:52.178 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:61187/weatherforecast - -
+2021-10-18 08:05:52.221 +02:00 [INF] Hosting environment: Development
+2021-10-18 08:05:52.223 +02:00 [INF] Content root path: C:\Users\Norbert Nyanyirai\source\repos\Question2WebAPI
+2021-10-18 08:05:52.313 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:61187/weatherforecast - - - 404 - - 140.1248ms
+2021-10-18 08:06:23.116 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:61187/ - -
+2021-10-18 08:06:23.120 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:61187/ - - - 404 - - 4.1489ms
+2021-10-18 08:06:48.029 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:61187/api/companies/ - -
+2021-10-18 08:06:48.046 +02:00 [INF] Executing endpoint 'Question2WebAPI.Controllers.CompaniesController.GetCompany (Question2WebAPI)'
+2021-10-18 08:06:48.156 +02:00 [INF] Route matched with {action = "GetCompany", controller = "Companies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[SingleDotNetCoreWebApp.Models.Company]]] GetCompany() on controller Question2WebAPI.Controllers.CompaniesController (Question2WebAPI).
+2021-10-18 08:06:48.602 +02:00 [INF] Called GetCompanies method
+2021-10-18 08:06:49.030 +02:00 [INF] Entity Framework Core 5.0.11 initialized 'Question2WebAPIContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-10-18 08:06:50.296 +02:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[BusinessType], [c].[Name]
+FROM [Company] AS [c]
+2021-10-18 08:06:50.362 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[SingleDotNetCoreWebApp.Models.Company, Question2WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-10-18 08:06:50.400 +02:00 [INF] Executed action Question2WebAPI.Controllers.CompaniesController.GetCompany (Question2WebAPI) in 2233.8264ms
+2021-10-18 08:06:50.403 +02:00 [INF] Executed endpoint 'Question2WebAPI.Controllers.CompaniesController.GetCompany (Question2WebAPI)'
+2021-10-18 08:06:50.411 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:61187/api/companies/ - - - 200 - application/json;+charset=utf-8 2381.5525ms
+2021-10-18 08:06:50.504 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:61187/favicon.ico - -
+2021-10-18 08:06:50.511 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:61187/favicon.ico - - - 404 - - 6.5498ms
